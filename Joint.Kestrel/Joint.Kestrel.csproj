@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<!--Package info-->
+	<PropertyGroup>
+		<Authors>Marcin Filapek</Authors>
+		<Title>Joint.Kestrel</Title>
+		<Copyright>Copyright (c) 2020 Joint</Copyright>
+		<Company></Company>
+		<Product>Joint.Kestrel</Product>
+		<PackageId>Joint.Kestrel</PackageId>
+		<PackageDescription>This package its created for common functionality.</PackageDescription>
+		<PackageTags>Joint.Kestrel</PackageTags>
+		<Description></Description>
+		<RepositoryUrl>https://github.com/flapek/Joint.Kestrel</RepositoryUrl>
+	</PropertyGroup>
+
+</Project>
