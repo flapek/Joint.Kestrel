@@ -11,12 +11,12 @@ namespace Joint.Kestrel
         {
             var servicePorts = ServicePortDtoFactory.CreateServicePorts();
 
-            builder.UseKestrel(opts =>
+            builder.UseKestrel(opt =>
             {
-                opts.Listen(IPAddress.Any, servicePorts.HttpPort);
+                opt.Listen(IPAddress.Any, servicePorts.HttpPort);
                 if (servicePorts.UseHttps)
                 {
-                    opts.Listen(IPAddress.Any, servicePorts.HttpsPort, options =>
+                    opt.Listen(IPAddress.Any, servicePorts.HttpsPort, options =>
                     {
                         var certificate = HttpsCertificateDtoFactory.Create();
                         options.UseHttps(certificate.PfxLocation, certificate.Password);

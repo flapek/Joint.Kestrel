@@ -1,12 +1,12 @@
-﻿namespace Joint.Kestrel.Config
+﻿namespace Joint.Kestrel.Options
 {
-    public class ServicePortDto
+    public class ServicePort
     {
         public int HttpPort { get; }
         public int HttpsPort { get; }
         public bool UseHttps { get; }
 
-        public ServicePortDto(int httpPort, int httpsPort, bool useHttps)
+        public ServicePort(int httpPort, int httpsPort, bool useHttps)
         {
             HttpPort = httpPort;
             HttpsPort = httpsPort;
